@@ -1,0 +1,41 @@
+PODS:
+  - FlagKit (2.2)
+  - IPicker (1.1.0)
+  - JGProgressHUD (2.2)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.5.0)
+
+DEPENDENCIES:
+  - FlagKit (~> 2.2)
+  - IPicker (from `https://github.com/YousefAnsary/iPicker.git`)
+  - JGProgressHUD
+  - RxCocoa (~> 4.4)
+  - RxSwift (~> 4.4)
+
+SPEC REPOS:
+  trunk:
+    - FlagKit
+    - JGProgressHUD
+    - RxCocoa
+    - RxSwift
+
+EXTERNAL SOURCES:
+  IPicker:
+    :git: https://github.com/YousefAnsary/iPicker.git
+
+CHECKOUT OPTIONS:
+  IPicker:
+    :commit: 40eb87246389b3b65caaffb3e93be3874fc53f29
+    :git: https://github.com/YousefAnsary/iPicker.git
+
+SPEC CHECKSUMS:
+  FlagKit: eca7dc89064b0c986302ba9acefad1bf80a435b1
+  IPicker: 8ab68b64d3ac46f51b38a1ed571e4eb5c8e0c73a
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+
+PODFILE CHECKSUM: 0851bc7b11419d50db4b2ed6177cf90e6c2da1b3
+
+COCOAPODS: 1.10.0

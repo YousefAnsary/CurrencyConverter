@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-CurrencyConverter-CurrencyConverterUITests/Pods-CurrencyConverter-CurrencyConverterUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FlagKit/FlagKit.framework
+${BUILT_PRODUCTS_DIR}/IPicker/IPicker.framework
+${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework

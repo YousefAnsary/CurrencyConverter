@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CurrencyTableCell" rowHeight="60" id="fZz-lH-Eze" customClass="CurrencyTableCell" customModule="CurrencyConverter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fZz-lH-Eze" id="3IW-zx-HrP">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpZ-u3-kGZ">
+                        <rect key="frame" x="64" y="20.5" width="39.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NVs-ao-DFE">
+                        <rect key="frame" x="12" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="CCa-kf-KWr"/>
+                            <constraint firstAttribute="height" constant="40" id="Mda-H7-iK7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="circleCorner" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B64-bk-pid">
+                        <rect key="frame" x="358.5" y="20.5" width="39.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="NVs-ao-DFE" firstAttribute="centerY" secondItem="3IW-zx-HrP" secondAttribute="centerY" id="78g-Gs-RsL"/>
+                    <constraint firstItem="dpZ-u3-kGZ" firstAttribute="leading" secondItem="NVs-ao-DFE" secondAttribute="trailing" constant="12" id="DhS-F7-pDo"/>
+                    <constraint firstItem="NVs-ao-DFE" firstAttribute="top" secondItem="3IW-zx-HrP" secondAttribute="top" constant="10" id="G7S-kj-KYs"/>
+                    <constraint firstItem="B64-bk-pid" firstAttribute="centerY" secondItem="3IW-zx-HrP" secondAttribute="centerY" id="JuR-Yb-HB2"/>
+                    <constraint firstItem="dpZ-u3-kGZ" firstAttribute="centerY" secondItem="3IW-zx-HrP" secondAttribute="centerY" id="LTI-eo-qIG"/>
+                    <constraint firstAttribute="trailing" secondItem="B64-bk-pid" secondAttribute="trailing" constant="16" id="ho8-WT-Wje"/>
+                    <constraint firstAttribute="bottom" secondItem="NVs-ao-DFE" secondAttribute="bottom" constant="10" id="mNP-5a-E1E"/>
+                    <constraint firstItem="NVs-ao-DFE" firstAttribute="leading" secondItem="3IW-zx-HrP" secondAttribute="leading" constant="12" id="n4k-DU-1Rb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countryImgView" destination="NVs-ao-DFE" id="Zfx-37-Fgr"/>
+                <outlet property="currencyLbl" destination="dpZ-u3-kGZ" id="9HQ-nc-wIo"/>
+                <outlet property="fractionLbl" destination="B64-bk-pid" id="COp-zA-rKW"/>
+            </connections>
+            <point key="canvasLocation" x="92.753623188405811" y="60.9375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

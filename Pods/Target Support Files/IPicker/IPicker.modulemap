@@ -1,0 +1,6 @@
+framework module IPicker {
+  umbrella header "IPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

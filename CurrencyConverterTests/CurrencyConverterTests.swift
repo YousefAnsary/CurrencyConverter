@@ -10,24 +10,37 @@ import XCTest
 
 class CurrencyConverterTests: XCTestCase {
 
+    var repository: CurrencyRepository?
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        repository = CurrencyRepository(service: CurrencyService())
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        repository = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testGetAllCurrencies() {
+        let expectation = self.expectation(description: "Expecting Array of Currencies")
+        repository?.getAllCurrencies(completion: { (res) in
+            switch res {
+            case .success(let currencues):
+                print(currencues)
+                expectation.fulfill()
+            case .failure(let err):
+                XCTFail("Failed with error: \(err.localizedDescription)")
+            }
+        })
+        self.waitForExpectations(timeout: 5)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+    
+    
+    #warning("Remove")
+//    func testPerformanceExample() throws {
+//        // This is an example of a performance test case.
+//        self.measure {
+//            // Put the code you want to measure the time of here.
+//        }
+//    }
 
 }
