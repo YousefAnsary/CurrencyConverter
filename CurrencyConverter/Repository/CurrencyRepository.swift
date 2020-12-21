@@ -20,6 +20,7 @@ class CurrencyRepository {
         cachedCurrencies = []
     }
     
+    /// Returns array of sorted currencies from stored data if any or it sends Get request and store fetched currencies then returns it
     func getAllCurrencies(completion: @escaping(Result<[Currency], APIErrorType>)-> Void) {
         if cachedCurrencies.isEmpty {
             service.getAllCurrencies{ [weak self] res in
@@ -38,6 +39,9 @@ class CurrencyRepository {
         }
     }
     
+    /// Returns array of sorted currencies calculated based on the passed currency code
+    /// - Parameters:
+    ///   - base: currency code to calculate all currencies based on it
     func getCurrencies(basedOn base: String, completion: @escaping (Result<[Currency], APIErrorType>)-> Void) {
         getAllCurrencies() { [weak self] res in
             guard let self = self else {return}
@@ -50,7 +54,10 @@ class CurrencyRepository {
         }
     }
     
-    func calculateCurrencies(forBase base: String)-> [Currency] {
+    /// Helper method Returns array of sorted currencies calculated based on the passed currency code
+    /// - Parameters:
+    ///   - base: currency code to calculate all currencies based on it
+    private func calculateCurrencies(forBase base: String)-> [Currency] {
         var currenies = cachedCurrencies
         guard let newBase = currenies.first(where: { $0.code == base }) else {
             assert(false, "No such base \(base)")

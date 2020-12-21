@@ -6,10 +6,10 @@ target 'CurrencyConverter' do
   use_frameworks!
 
   # Pods for CurrencyConverter
+    pod 'IQKeyboardManager'
     pod 'JGProgressHUD'
     pod 'RxSwift', '~> 4.4'
     pod 'RxCocoa', '~> 4.4'
-    pod 'FlagKit', '~> 2.2'
     pod 'IPicker', :git => 'https://github.com/YousefAnsary/iPicker.git'
 
   target 'CurrencyConverterTests' do

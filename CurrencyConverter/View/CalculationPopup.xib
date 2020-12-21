@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -155,6 +156,7 @@
             <connections>
                 <outlet property="baseCurrencyLbl" destination="dnp-fv-fYc" id="ZhU-z8-iB0"/>
                 <outlet property="baseCurrencyTF" destination="AnJ-e6-tI2" id="cNd-oj-Kdr"/>
+                <outlet property="bottomConstraint" destination="azw-kO-ZiA" id="mt9-oV-h2j"/>
                 <outlet property="closeBtn" destination="ND9-68-04C" id="1Bw-wP-YAm"/>
                 <outlet property="selectedCurrencyLbl" destination="3tU-h1-OJR" id="jmC-Z3-6zq"/>
                 <outlet property="selectedCurrencyTF" destination="29Z-vR-QeU" id="nQH-6J-79g"/>

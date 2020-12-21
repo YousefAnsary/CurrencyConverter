@@ -13,6 +13,7 @@ class HomeViewModel: ViewModel {
     let currencies = BehaviorRelay<[Currency]>(value: [])
     let baseCurrency = BehaviorRelay<Currency?>(value: nil)
     var currenciesStrings: [String] = []
+    var animatedCellIndex = [Int]()
     private let repository: CurrencyRepository
     private let disposeBag = DisposeBag()
     
@@ -30,6 +31,7 @@ class HomeViewModel: ViewModel {
     }
     
     func fetchAllCurrencies() {
+        animatedCellIndex = []
         isLoadingObservable.accept(true)
         repository.getAllCurrencies { [weak self] res in
             guard let self = self else {return}
@@ -46,6 +48,7 @@ class HomeViewModel: ViewModel {
     }
     
     func fetchCurrencies(base: String) {
+        animatedCellIndex = []
         isLoadingObservable.accept(true)
         repository.getCurrencies(basedOn: base) { [weak self] res in
             guard let self = self else {return}

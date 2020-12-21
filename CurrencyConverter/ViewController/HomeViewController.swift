@@ -75,6 +75,26 @@ class HomeViewController: BaseViewController {
             guard let self = self else {return}
             self.showCalculationPopup?(self.viewModel.baseCurrency.value!, self.viewModel.currencies.value[index.row])
         }).disposed(by: disposeBag)
+        
+        currenciesTableView.rx.willDisplayCell.subscribe(onNext: { [weak self] event in
+            guard let self = self else {return}
+            if !self.viewModel.animatedCellIndex.contains(event.indexPath.row) {
+                
+                self.viewModel.animatedCellIndex.append(event.indexPath.row)
+                event.cell.transform = CGAffineTransform(translationX: 0, y: event.cell.frame.height / 2)
+                event.cell.alpha = 0
+                UIView.animate(
+                    withDuration: 0.3,
+                    delay: 0.05 * Double(event.indexPath.row),
+                    options: [.curveEaseInOut],
+                    animations: {
+                        event.cell.transform = CGAffineTransform(translationX: 0, y: 0)
+                        event.cell.alpha = 1
+                })
+                
+            }
+        }).disposed(by: disposeBag)
+        
     }
     
 }

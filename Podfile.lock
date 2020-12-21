@@ -1,21 +1,21 @@
 PODS:
-  - FlagKit (2.2)
   - IPicker (1.1.0)
+  - IQKeyboardManager (6.5.6)
   - JGProgressHUD (2.2)
   - RxCocoa (4.5.0):
     - RxSwift (>= 4.4.2, ~> 4.4)
   - RxSwift (4.5.0)
 
 DEPENDENCIES:
-  - FlagKit (~> 2.2)
   - IPicker (from `https://github.com/YousefAnsary/iPicker.git`)
+  - IQKeyboardManager
   - JGProgressHUD
   - RxCocoa (~> 4.4)
   - RxSwift (~> 4.4)
 
 SPEC REPOS:
   trunk:
-    - FlagKit
+    - IQKeyboardManager
     - JGProgressHUD
     - RxCocoa
     - RxSwift
@@ -30,12 +30,12 @@ CHECKOUT OPTIONS:
     :git: https://github.com/YousefAnsary/iPicker.git
 
 SPEC CHECKSUMS:
-  FlagKit: eca7dc89064b0c986302ba9acefad1bf80a435b1
   IPicker: 8ab68b64d3ac46f51b38a1ed571e4eb5c8e0c73a
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
 
-PODFILE CHECKSUM: 0851bc7b11419d50db4b2ed6177cf90e6c2da1b3
+PODFILE CHECKSUM: 6e0260f915017a4794ae12edad6d8156dd6ccbd0
 
 COCOAPODS: 1.10.0
