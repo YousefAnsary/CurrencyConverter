@@ -9,13 +9,13 @@ open the file CurrencyConverter.xcworkspace <br/>
 from the top bar next to run button ensure the selected scheme is CurrencyConverter <br/>
 and next to it select your device (but ensure you've signed this project to an apple account that trusts this phone) <br/>
 or select your preferred simulator then hit ***run***! <br/> <br/>
-![](https://raw.githubusercontent.com/YousefAnsary/CurrencyConverter/main/Simulator%20Screen%20Shot%20-%20iPhone%2012%20mini%20-%202020-12-21%20at%2012.24.57.png?s=100)
+![](https://raw.githubusercontent.com/YousefAnsary/CurrencyConverter/main/Simulator%20Screen%20Shot%20-%20iPhone%2012%20mini%20-%202020-12-21%20at%2012.24.57.png)
 <br/> <br/>
 application starts with a list of currencies to base EUR <br/>
 pressing on the blue bar at the top lets you change the base currency, <br/> <br/>
-![](https://raw.githubusercontent.com/YousefAnsary/CurrencyConverter/main/Simulator%20Screen%20Shot%20-%20iPhone%2012%20mini%20-%202020-12-21%20at%2012.25.26.png?s=100)
+![](https://raw.githubusercontent.com/YousefAnsary/CurrencyConverter/main/Simulator%20Screen%20Shot%20-%20iPhone%2012%20mini%20-%202020-12-21%20at%2012.25.26.png)
 <br/> <br/>
 selecting any currency from the list will open a currency calculator from base currency to the selected currency for you <br/> <br/>
-![](https://github.com/YousefAnsary/CurrencyConverter/raw/main/Simulator%20Screen%20Shot%20-%20iPhone%2012%20mini%20-%202020-12-21%20at%2012.25.46.png?s=100)
+![](https://github.com/YousefAnsary/CurrencyConverter/raw/main/Simulator%20Screen%20Shot%20-%20iPhone%2012%20mini%20-%202020-12-21%20at%2012.25.46.png)
 <br/><br/>
 and you have ***pull to refresh*** feature
