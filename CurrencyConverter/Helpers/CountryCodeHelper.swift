@@ -35,7 +35,6 @@ class CountryCodeHelper {
     class func flag(country: String) -> Character {
         let base : UInt32 = 127397
         var s = ""
-        print(country)
         for v in country.unicodeScalars {
             s.unicodeScalars.append(UnicodeScalar(base + v.value)!)
         }

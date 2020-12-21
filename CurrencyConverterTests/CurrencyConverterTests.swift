@@ -40,8 +40,9 @@ class CurrencyConverterTests: XCTestCase {
             switch res {
             case .success(let currencues):
                 let base = currencues.first(where: {$0.code == "EGP"})!
-                XCTAssert(Double(base.fraction) == 1, "incorrect calculation")
-                print(currencues)
+                let usd = currencues.first(where: {$0.code == "USD"})!
+                let inr = currencues.first(where: {$0.code == "INR"})!
+                XCTAssert(Double(base.fraction) == 1 && usd.fraction == "0.064" && inr.fraction == "4.725", "incorrect calculation")
                 expectation.fulfill()
             case .failure(let err):
                 XCTFail("Failed with error: \(err.localizedDescription)")
