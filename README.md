@@ -15,7 +15,7 @@ application starts with a list of currencies to base EUR <br/>
 pressing on the blue bar at the top lets you change the base currency, <br/> <br/>
 ![](https://raw.githubusercontent.com/YousefAnsary/CurrencyConverter/main/Simulator%20Screen%20Shot%20-%20iPhone%2012%20mini%20-%202020-12-21%20at%2012.25.26.png)
 <br/> <br/>
-selecting any currency from the list will open a currency calculator from base currency to the selected currency for you <br/> <br/>
+selecting any currency from the home main list will open a currency calculator from base currency to the selected currency for you <br/> <br/>
 ![](https://github.com/YousefAnsary/CurrencyConverter/raw/main/Simulator%20Screen%20Shot%20-%20iPhone%2012%20mini%20-%202020-12-21%20at%2012.25.46.png)
 <br/><br/>
 and you have ***pull to refresh*** feature
